@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Base Define -->
+	<definition name="base.definition" template="/views/common/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/views/common/_header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/views/common/_footer.jsp" />
+	</definition>
+
+	<definition name="homePage" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/views/index.jsp" />
+	</definition>
+	
+	<definition name="productPage" extends="base.definition">
+		<put-attribute name="title" value="Product" />
+		<put-attribute name="body"
+			value="/views/product.jsp" />
+	</definition>
+	
+	<definition name="detailProductPage" extends="base.definition">
+		<put-attribute name="title" value="Detail Product" />
+		<put-attribute name="body"
+			value="/views/detail.jsp" />
+	</definition>
+	<definition name="loginPage" extends="base.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body"
+			value="/views/login.jsp" />
+	</definition>
+	<definition name="registerPage" extends="base.definition">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="body"
+			value="/views/register.jsp" />
+	</definition>
+	<definition name="forgetPage" extends="base.definition">
+		<put-attribute name="title" value="Forget" />
+		<put-attribute name="body"
+			value="/views/forget.jsp" />
+	</definition>
+	<definition name="changePage" extends="base.definition">
+		<put-attribute name="title" value="Change Page" />
+		<put-attribute name="body"
+			value="/views/change.jsp" />
+	</definition>
+</tiles-definitions>
+
